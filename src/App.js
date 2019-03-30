@@ -35,13 +35,20 @@ class App extends Component {
   }
 
   handleSubmit = (event) => {
-    this.setState({
-      result: results[random.int(0, results.length - 1)]
-    });
+    if(event.target.value.includes('David Bellamy')) {
+      this.setState({
+        result: 'David Bellamy lives in FUCKING BEDBURN. BEDBURN IS NOT HAMSTERLEY'
+      });
+    } else {
+      this.setState({
+        result: results[random.int(0, results.length - 1)]
+      });
+    }
     event.preventDefault();
   }
 
   resultText = (result, query) => {
+
     if(result.length > 1) {
       return(
         <div className="results">
@@ -75,7 +82,7 @@ class App extends Component {
             </label>
             <br />
             <input type="submit" value="Submit" />
-            <a href="https://youtu.be/dQw4w9WgXcQ?t=42" className="link-button">I'm feeling lucky</a>
+            <a href="https://youtu.be/dQw4w9WgXcQ?t=42" className="link-button">I'm feeling sassy</a>
           </form>
 
           {this.resultText(this.state.result, this.state.value)}
