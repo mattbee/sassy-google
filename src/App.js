@@ -7,10 +7,16 @@ const titleArray = title.split('');
 const colours = ['blue', 'green', 'red', 'yellow', 'blue', 'red', 'green', 'pink', 'orange', 'blue', 'red']
 
 const results = [
-  'Now that is a good question.',
+  'Now that is a good question. You are not a good person.',
   'Why do you need to know that, don\'t you have anything better to do?',
   'Do you think I know everything fuckwad?',
-  'How about you look it up in a FUCKING BOOK?'
+  'How about you look it up in a FUCKING BOOK?',
+  'Phone Gillon, he will know.',
+  'DID YOU EVEN LISTEN IN SCHOOL?',
+  'Fuck me, who doesn\'t know that? I guess you dumbass',
+  'HAHA, only fucking pricks do not know that',
+  'Did you ask yo ma, if not, I\'ll ask her when she wakes up.',
+  'James is probably drunk, but ask him when he is sober.'
 ];
 
 class App extends Component {
@@ -61,7 +67,7 @@ class App extends Component {
 
           <form onSubmit={this.handleSubmit}>
             <label>
-              
+
               <input className="query" type="text" placeholder="What do you want to know, stupid?" value={this.state.value} onChange={this.handleChange} />
             </label>
             <br />
