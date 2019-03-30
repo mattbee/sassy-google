@@ -45,7 +45,7 @@ class App extends Component {
     if(result.length > 1) {
       return(
         <div className="results">
-          {result}
+          <span className="result-text">{result}</span>
 
           <p className="real-google"><a
             className="App-link"
