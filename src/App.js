@@ -11,12 +11,15 @@ const results = [
   'Why do you need to know that, don\'t you have anything better to do?',
   'Do you think I know everything fuckwad?',
   'How about you look it up in a FUCKING BOOK?',
-  'Phone Gillon, he will know.',
+  'Phone Gillon, he will know. But he only answers when you phone at 3am. Phone then.',
   'DID YOU EVEN LISTEN IN SCHOOL?',
   'Fuck me, who doesn\'t know that? I guess you dumbass',
   'HAHA, only fucking pricks do not know that',
   'Did you ask yo ma, if not, I\'ll ask her when she wakes up.',
-  'James is probably drunk, but ask him when he is sober.'
+  'James is probably drunk, but ask him when he is sober.',
+  'Don’t you think you’ve had enough? You fat fuck.',
+  'Time you stopped drinking and started taking responsibility!',
+  'Wouldn’t you like to know.'
 ];
 
 class App extends Component {
