@@ -35,15 +35,18 @@ class App extends Component {
   }
 
   handleSubmit = (event) => {
-    if(event.target.value.includes('David Bellamy')) {
-      this.setState({
-        result: 'David Bellamy lives in FUCKING BEDBURN. BEDBURN IS NOT HAMSTERLEY'
-      });
-    } else {
-      this.setState({
-        result: results[random.int(0, results.length - 1)]
-      });
+    let newResult = results[random.int(0, results.length - 1)];
+
+    if(this.state.value.includes('David Bellamy')) {
+      newResult = 'David Bellamy lives in FUCKING BEDBURN. BEDBURN IS NOT HAMSTERLEY';
     }
+    if(this.state.value.includes('Gillon') && this.state.value.includes('basket')) {
+      newResult = 'Gillon was lucky, no doubt in my mind. Even a broken clock is right twice a day.';
+    }
+
+    this.setState({
+      result: newResult
+    });
     event.preventDefault();
   }
 
