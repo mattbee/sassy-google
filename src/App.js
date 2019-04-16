@@ -19,7 +19,8 @@ const results = [
   'James is probably drunk, but ask him when he is sober.',
   'Don’t you think you’ve had enough? You fat fuck.',
   'Time you stopped drinking and started taking responsibility!',
-  'Wouldn’t you like to know.'
+  'Wouldn’t you like to know.',
+  'Do not worry, you can be funny. Even a broken clock is right twice a day.'
 ];
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
   handleSubmit = (event) => {
     let newResult = results[random.int(0, results.length - 1)];
 
+    if(this.state.value.includes('am I funny') || this.state.value.includes('Gillon funny'))
     if(this.state.value.includes('David Bellamy')) {
       newResult = 'David Bellamy lives in FUCKING BEDBURN. BEDBURN IS NOT HAMSTERLEY';
     }
